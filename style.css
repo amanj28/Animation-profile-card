@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+}
+
+.wrapper .box{
+    width: 300px;
+    height: 300px;
+    border: 1px solid #eee;
+    position: relative;
+ background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+ background-blend-mode: soft-light,screen;
+  border: 5px inset orange;
+    border-radius: 50%;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.wrapper .box .dott{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 45%;
+    right: 10px;
+    z-index: 110;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.wrapper .box .text-box{
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50px;
+    left: 0;
+}
+
+.wrapper .box .text-box h1{
+    font-size: 22px;
+    color: #111;
+}
+
+.wrapper .box .text-box .social ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .box .text-box .social ul li{
+    list-style: none;
+    font-size: 18px;
+    padding: 10px;
+}
+.wrapper .box .text-box .social ul li a{
+    color: #222;
+    text-decoration: none;
+}
+
+.wrapper .box .img-box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+border-radius: 30px 60px;
+   border: 3px solid #fff;
+    transform-origin: 95% 40%;
+    transition: .5s;
+    transform: translate3d(0, 0, 0);
+    background: url('https://i.postimg.cc/xd5rHyG3/ZEPETO-CAPTURE-8585528650756118508.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+   -webkit-animation: swing-right-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: swing-right-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+.wrapper .box:hover .img-box{
+   -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+}
